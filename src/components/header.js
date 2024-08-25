@@ -1,14 +1,14 @@
 import React from "react";
 import NavBar from "./NavigationBar";
 import Carousel from "./Carousel";
-import HeroSection from "./HeroSection";
+import Features from "./Features";
 
 const Header = () => {
   return (
     <header>
       <NavBar />
       <Carousel />
-      <HeroSection />
+      <Features />
     </header>
   );
 };
