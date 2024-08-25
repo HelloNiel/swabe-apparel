@@ -1,0 +1,103 @@
+.custom-navbar {
+  padding-left: 70px;
+  padding-right: 70px;
+  z-index: 1000;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
+/* Spacing and alignment for navigation links */
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Style for individual nav links */
+.nav-link {
+  margin: 0 10px;
+  font-size: 16px;
+  padding: 8px 12px;
+}
+
+.navbar-collapse .nav-link {
+  margin: 0 10px;
+  font-size: 16px;
+  padding: 8px 12px;
+}
+
+/* Styles for the Shop Name in Navbar */
+.navbar-brand {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+/* Navbar Styles for Large Screens */
+@media (min-width: 992px) {
+  .navbar-collapse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+  }
+
+  .nav {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+  }
+
+  .search-container {
+    margin-left: auto;
+    margin-bottom: 0;
+  }
+}
+
+/* Navbar Styles for Medium Screens (Tablets) */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    align-items: center;
+    padding-left: 80px;
+    padding-right: 80px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar-collapse .d-flex {
+    flex-direction: column; /* Stack login and register vertically */
+    gap: 10px; /* Spacing between login and register */
+  }
+}
+
+/* Navbar Styles for Small Screens (Phones) */
+@media (max-width: 767.98px) {
+  .navbar-brand {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px;
+  }
+
+  .navbar-collapse .d-flex {
+    flex-direction: column; /* Stack login and register vertically */
+  }
+}
