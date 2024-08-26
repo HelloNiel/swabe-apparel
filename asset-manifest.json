@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/swabe-shop/static/css/main.6bc7a549.css",
-    "main.js": "/swabe-shop/static/js/main.810e1aab.js",
-    "static/media/Banner.jpg": "/swabe-shop/static/media/Banner.8da29a3501c472a2e390.jpg",
-    "static/media/fa-solid-900.ttf": "/swabe-shop/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
-    "static/media/fa-brands-400.ttf": "/swabe-shop/static/media/fa-brands-400.0ff70dcbf135d859ebf3.ttf",
-    "static/media/fa-solid-900.woff2": "/swabe-shop/static/media/fa-solid-900.93f719f4d62bfa3e748c.woff2",
-    "static/media/fa-brands-400.woff2": "/swabe-shop/static/media/fa-brands-400.bb8d5a145e22822103fb.woff2",
-    "static/media/fa-regular-400.ttf": "/swabe-shop/static/media/fa-regular-400.17a6e1aebccdbaa39e78.ttf",
-    "static/media/fa-regular-400.woff2": "/swabe-shop/static/media/fa-regular-400.bc3722686635b5f86132.woff2",
-    "static/media/fa-v4compatibility.ttf": "/swabe-shop/static/media/fa-v4compatibility.0f6cb412603527bda691.ttf",
-    "static/media/fa-v4compatibility.woff2": "/swabe-shop/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
-    "index.html": "/swabe-shop/index.html",
-    "main.6bc7a549.css.map": "/swabe-shop/static/css/main.6bc7a549.css.map",
-    "main.810e1aab.js.map": "/swabe-shop/static/js/main.810e1aab.js.map"
+    "main.css": "/swabe-apparel/static/css/main.0327a62a.css",
+    "main.js": "/swabe-apparel/static/js/main.438a1577.js",
+    "static/media/Banner.jpg": "/swabe-apparel/static/media/Banner.8da29a3501c472a2e390.jpg",
+    "static/media/fa-solid-900.ttf": "/swabe-apparel/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
+    "static/media/fa-brands-400.ttf": "/swabe-apparel/static/media/fa-brands-400.0ff70dcbf135d859ebf3.ttf",
+    "static/media/fa-solid-900.woff2": "/swabe-apparel/static/media/fa-solid-900.93f719f4d62bfa3e748c.woff2",
+    "static/media/fa-brands-400.woff2": "/swabe-apparel/static/media/fa-brands-400.bb8d5a145e22822103fb.woff2",
+    "static/media/fa-regular-400.ttf": "/swabe-apparel/static/media/fa-regular-400.17a6e1aebccdbaa39e78.ttf",
+    "static/media/fa-regular-400.woff2": "/swabe-apparel/static/media/fa-regular-400.bc3722686635b5f86132.woff2",
+    "static/media/fa-v4compatibility.ttf": "/swabe-apparel/static/media/fa-v4compatibility.0f6cb412603527bda691.ttf",
+    "static/media/fa-v4compatibility.woff2": "/swabe-apparel/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
+    "index.html": "/swabe-apparel/index.html",
+    "main.0327a62a.css.map": "/swabe-apparel/static/css/main.0327a62a.css.map",
+    "main.438a1577.js.map": "/swabe-apparel/static/js/main.438a1577.js.map"
   },
   "entrypoints": [
-    "static/css/main.6bc7a549.css",
-    "static/js/main.810e1aab.js"
+    "static/css/main.0327a62a.css",
+    "static/js/main.438a1577.js"
   ]
 }
