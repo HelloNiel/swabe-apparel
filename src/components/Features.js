@@ -15,8 +15,8 @@ const UncontrolledExample = () => {
                 <div className="list-icon">
                   <IoStorefrontOutline />
                 </div>
-                <div className="Content">
-                  <h3>Walk-In</h3>
+                <div className="Content ">
+                  <h3>Easy Walk-In</h3>
                   <p>Choose your desired size and color</p>
                 </div>
               </div>

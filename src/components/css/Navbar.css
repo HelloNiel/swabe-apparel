@@ -98,6 +98,6 @@
   }
 
   .navbar-collapse .d-flex {
-    flex-direction: column; /* Stack login and register vertically */
+    flex-direction: column;
   }
 }

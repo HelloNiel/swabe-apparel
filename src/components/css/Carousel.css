@@ -9,41 +9,40 @@
   right: 0;
   text-align: center;
   z-index: 500;
+  padding: 0 15px;
 }
 
 .carousel-caption h3 {
-  font-weight: 900;
-  letter-spacing: 5px;
-  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 4rem;
   margin-bottom: 10px;
 }
 
 .carousel-caption p {
-  font-size: 18px;
-  letter-spacing: 1.5px;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
   margin: 0;
 }
 
 @media (max-width: 991.98px) {
   /* lg breakpoint and below */
   .carousel-caption h3 {
-    font-size: 40px;
+    font-size: 3rem;
   }
 
   .carousel-caption p {
-    font-size: 16px;
+    font-size: 0.875rem;
   }
 }
 
 @media (max-width: 767.98px) {
   /* md breakpoint and below */
   .carousel-caption h3 {
-    font-size: 28px;
-    letter-spacing: 1px;
+    font-size: 2rem;
   }
 
   .carousel-caption p {
-    font-size: 14px;
-    letter-spacing: 1px;
+    font-size: 0.75rem;
   }
 }
