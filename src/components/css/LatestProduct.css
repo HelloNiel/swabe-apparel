@@ -1,0 +1,50 @@
+.mens-latest .carousel-control-prev,
+.mens-latest .carousel-control-next {
+  width: 5%;
+  color: black;
+  opacity: 1;
+}
+
+.mens-latest .carousel-control-prev-icon,
+.mens-latest .carousel-control-next-icon {
+  background-image: none;
+}
+
+.mens-latest .carousel-control-prev-icon::after,
+.mens-latest .carousel-control-next-icon::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+}
+
+.mens-latest .carousel-control-prev-icon::after {
+  transform: rotate(-45deg);
+}
+
+.mens-latest .carousel-control-next-icon::after {
+  transform: rotate(135deg);
+}
+
+.mens-latest-card {
+  margin-bottom: 20px;
+  outline: none;
+  border: none;
+  border-radius: 0;
+}
+
+.mens-latest-card .card-img-top {
+  border-radius: 0;
+}
+
+.mens-latest-card-body {
+  padding-left: 0;
+}
+
+.mens-latest-card-body .card-title,
+.mens-latest-card-body .rating,
+.mens-latest-card-body .card-text {
+  margin-left: 0;
+}

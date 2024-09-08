@@ -1,4 +1,4 @@
-.carousel-caption {
+.banner-carousel .carousel-caption {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,37 +12,41 @@
   padding: 0 15px;
 }
 
-.carousel-caption h3 {
+.banner-carousel .carousel-caption h3 {
   font-weight: 700;
   letter-spacing: 2px;
   font-size: 4rem;
   margin-bottom: 10px;
 }
 
-.carousel-caption p {
+.banner-carousel .carousel-caption p {
   font-size: 1rem;
   letter-spacing: 0.5px;
   margin: 0;
 }
 
+/* Hide carousel control buttons */
+.banner-carousel .carousel-control-prev,
+.banner-carousel .carousel-control-next {
+  display: none;
+}
+
 @media (max-width: 991.98px) {
-  /* lg breakpoint and below */
-  .carousel-caption h3 {
+  .banner-carousel .carousel-caption h3 {
     font-size: 3rem;
   }
 
-  .carousel-caption p {
+  .banner-carousel .carousel-caption p {
     font-size: 0.875rem;
   }
 }
 
 @media (max-width: 767.98px) {
-  /* md breakpoint and below */
-  .carousel-caption h3 {
+  .banner-carousel .carousel-caption h3 {
     font-size: 2rem;
   }
 
-  .carousel-caption p {
+  .banner-carousel .carousel-caption p {
     font-size: 0.75rem;
   }
 }
