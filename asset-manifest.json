@@ -1,22 +1,28 @@
 {
   "files": {
-    "main.css": "/swabe-apparel/static/css/main.0327a62a.css",
-    "main.js": "/swabe-apparel/static/js/main.438a1577.js",
+    "main.css": "/swabe-apparel/static/css/main.d7fee4d1.css",
+    "main.js": "/swabe-apparel/static/js/main.e15316d8.js",
     "static/media/Banner.jpg": "/swabe-apparel/static/media/Banner.8da29a3501c472a2e390.jpg",
     "static/media/fa-solid-900.ttf": "/swabe-apparel/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
     "static/media/fa-brands-400.ttf": "/swabe-apparel/static/media/fa-brands-400.0ff70dcbf135d859ebf3.ttf",
+    "static/media/Anime-collection.jfif": "/swabe-apparel/static/media/Anime-collection.e0b66eb81a119177efe5.jfif",
     "static/media/fa-solid-900.woff2": "/swabe-apparel/static/media/fa-solid-900.93f719f4d62bfa3e748c.woff2",
     "static/media/fa-brands-400.woff2": "/swabe-apparel/static/media/fa-brands-400.bb8d5a145e22822103fb.woff2",
+    "static/media/w1.jpg": "/swabe-apparel/static/media/w1.4b8238aaa8f9ce705a9e.jpg",
     "static/media/fa-regular-400.ttf": "/swabe-apparel/static/media/fa-regular-400.17a6e1aebccdbaa39e78.ttf",
+    "static/media/m1.jpg": "/swabe-apparel/static/media/m1.f5edae9fb5b60da64df4.jpg",
+    "static/media/Pants.jfif": "/swabe-apparel/static/media/Pants.81af225ab102fba5bfa5.jfif",
+    "static/media/Shirt.jfif": "/swabe-apparel/static/media/Shirt.69561ee65cfa8a7de656.jfif",
+    "static/media/Shoes.jfif": "/swabe-apparel/static/media/Shoes.b7707df477b320257503.jfif",
     "static/media/fa-regular-400.woff2": "/swabe-apparel/static/media/fa-regular-400.bc3722686635b5f86132.woff2",
     "static/media/fa-v4compatibility.ttf": "/swabe-apparel/static/media/fa-v4compatibility.0f6cb412603527bda691.ttf",
     "static/media/fa-v4compatibility.woff2": "/swabe-apparel/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
     "index.html": "/swabe-apparel/index.html",
-    "main.0327a62a.css.map": "/swabe-apparel/static/css/main.0327a62a.css.map",
-    "main.438a1577.js.map": "/swabe-apparel/static/js/main.438a1577.js.map"
+    "main.d7fee4d1.css.map": "/swabe-apparel/static/css/main.d7fee4d1.css.map",
+    "main.e15316d8.js.map": "/swabe-apparel/static/js/main.e15316d8.js.map"
   },
   "entrypoints": [
-    "static/css/main.0327a62a.css",
-    "static/js/main.438a1577.js"
+    "static/css/main.d7fee4d1.css",
+    "static/js/main.e15316d8.js"
   ]
 }
