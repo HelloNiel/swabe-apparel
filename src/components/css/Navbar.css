@@ -72,17 +72,26 @@
   }
 
   .navbar-collapse .d-flex {
-    flex-direction: column; /* Stack login and register vertically */
-    gap: 10px; /* Spacing between login and register */
+    flex-direction: column;
+    gap: 10px;
   }
 }
 
 /* Navbar Styles for Small Screens (Phones) */
 @media (max-width: 767.98px) {
+  .custom-navbar {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   .navbar-brand {
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 0.5px;
+  }
+
+  .navbar-toggler {
+    margin-left: auto;
   }
 
   .navbar-collapse {
@@ -94,10 +103,37 @@
     z-index: 1000;
     align-items: center;
     flex-direction: column;
-    padding: 0px;
+    padding: 10px 15px;
   }
 
   .navbar-collapse .d-flex {
     flex-direction: column;
   }
+}
+
+@media (max-width: 575.98px) {
+  .custom-navbar {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .navbar-brand {
+    font-size: 16px;
+  }
+}
+
+.dropdown-menu {
+  background-color: #f8f9fa;
+  border: none;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.dropdown-item {
+  color: #333;
+  padding: 0.5rem 1rem;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+  background-color: #e9ecef;
+  color: #16181b;
 }

@@ -53,7 +53,7 @@ function Product() {
   const displayProducts = getDisplayProducts();
 
   return (
-    <Container className="mt-5">
+    <Container id="Products" className="mt-5">
       <div className="text-center mb-5">
         <h1 className="product-main-title">Our Products</h1>
         <p className="product-description">
