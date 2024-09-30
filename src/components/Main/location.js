@@ -6,10 +6,9 @@ function location() {
   return (
     <>
       <ShopPicture />
-      // google map location
       <Footer />
     </>
   )
 }
 
-export default location
+export default location;

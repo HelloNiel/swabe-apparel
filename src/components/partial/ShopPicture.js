@@ -11,7 +11,6 @@ function ShopPicture() {
         </div>
       </div>
     </div>
-    
   )
 }
 

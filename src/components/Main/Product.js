@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { Container } from "react-bootstrap";
-import products from "../assets/ProductData";
-import "./css/TopProduct.css";
+import { useNavigate } from "react-router-dom"; // Updated import
+import products from "../../assets/ProductData";
+import "../css/Products.css";
 
 function Product() {
   const [selectedCategory, setSelectedCategory] = useState(null);
+  const navigate = useNavigate(); // Updated
 
   const mainCategories = ["shoes", "shirts", "pants", "anime"];
 
@@ -25,7 +27,12 @@ function Product() {
   };
 
   const handleCategoryClick = (category) => {
-    setSelectedCategory(category === selectedCategory ? null : category);
+    if (category === "shoes" || category === "pants") {
+      navigate("/shoes");
+      navigate("/pants");
+    } else {
+      setSelectedCategory(category === selectedCategory ? null : category);
+    }
   };
 
   const getDisplayProducts = () => {
@@ -55,7 +62,7 @@ function Product() {
   return (
     <Container id="Products" className="mt-5">
       <div className="text-center mb-5">
-        <h1 className="product-main-title">Our Products</h1>
+        <h1 className="product-main-title">Check Now Our Products!</h1>
         <p className="product-description">
           Nulla vitae elit libero, a pharetra augue mollis interdum.
         </p>
@@ -77,7 +84,7 @@ function Product() {
                 }`}
                 onClick={() => handleCategoryClick(product.category)}
               >
-                {getCategoryName(product.category)} Product
+                {getCategoryName(product.category)} 
               </button>
             </div>
           </div>

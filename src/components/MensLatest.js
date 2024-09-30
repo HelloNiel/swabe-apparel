@@ -32,11 +32,7 @@ const MensLatest = () => {
                       <Card.Img variant="top" src={product.image} />
                       <Card.Body className="mens-latest-card-body">
                         <Card.Title>{product.name}</Card.Title>
-                        <div className="rating">
-                          {"★".repeat(product.rating)}
-                          {"☆".repeat(5 - product.rating)}
-                        </div>
-                        <Card.Text>${product.price.toFixed(2)}</Card.Text>
+                        <button className="btn btn-primary">Details</button>
                       </Card.Body>
                     </Card>
                   </Col>

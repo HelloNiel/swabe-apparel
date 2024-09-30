@@ -19,6 +19,7 @@ function NavScrollExample() {
             <Nav.Link as={HashLink} smooth to="/#Products">Products</Nav.Link>
             <Nav.Link as={HashLink} smooth to="/#mens-latest">Men's</Nav.Link>
             <Nav.Link as={HashLink} smooth to="/#womens-latest">Women's</Nav.Link>
+            <Nav.Link as={HashLink} smooth to="/shoes">Shoes</Nav.Link>
             <NavDropdown title="Pages" id="navbarScrollingDropdown">
               <NavDropdown.Item as={Link} to="/about-us">About Us</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/location">Location</NavDropdown.Item>

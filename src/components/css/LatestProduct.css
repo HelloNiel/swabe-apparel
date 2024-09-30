@@ -88,6 +88,7 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
     font-size: 0.9rem;
+    text-align: center; /* Center text */
   }
 
   .mens-latest-card .card-img-top {
@@ -136,4 +137,34 @@
   .mens-latest .carousel-control-next {
     width: 8%;
   }
+}
+
+.mens-latest-card .btn {
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+  width: 100%;
+  margin: 0px;
+  border-radius: 0px;
+  transition: 0.4s ease-in-out;
+}
+
+.mens-latest-card .btn:hover {
+  color: black;
+  border: 1px solid rgb(181, 174, 174);
+}
+
+.transparent-button {
+  background-color: transparent;
+  color: black;
+  border: 1px solid black; 
+  padding: 10px;
+  border-radius: 0; 
+  transition: 0.4s ease-in-out;
+  width: 100%; 
+}
+
+.transparent-button:hover {
+  color: black;
+  border: 1px solid rgb(181, 174, 174);
 }
