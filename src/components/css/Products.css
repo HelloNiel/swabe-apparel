@@ -25,7 +25,7 @@
     justify-content: center;
     gap: 1rem;
     margin: -0.5rem;
-  }
+}
   
 .product-card {
     width: 200px;
@@ -33,103 +33,83 @@
     flex-direction: column;
     background-color: #f8f9fa;
     margin: 0.5rem;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
   
 .product-image-container {
     width: 100%;
     height: 230px;
     overflow: hidden;
+    transition: transform 0.3s ease;
 }
   
 .product-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 0.3s ease;
 }
   
-.product-info {
+.product-card:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+  
+.product-image-container:hover .product-image {
+    transform: scale(1.1);
+}
+  
+.product-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 19px;
-    font-weight: bold;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-  
-.product-title {
-    font-size: 14px;
-    font-weight: normal;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 26px;
+    font-weight: 400;
 }
   
-.product-price {
-    font-size: 12px;
-    font-weight: bold;
-    margin-bottom: 0;
-}
-  
-.transparent-button {
-    background-color: transparent;
-    border: none;
-    color: #333;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-  
-.back-button {
-    display: block;
-    margin: 20px auto;
-    padding: 10px 20px;
-    background-color: #f0f0f0;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-  
-.back-button:hover {
-    background-color: #e0e0e0;
-}
-  
-.transparent-button:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+.product-card:hover .product-overlay {
+    opacity: 1;
 }
   
 @media (max-width: 576px) {
     .product-card {
-      width: calc(50% - 1rem);
-  }
+        width: calc(50% - 1rem);
+    }
   
-  .product-info {
-      font-size: 14px;
-  }
+    .product-info {
+        font-size: 14px;
+    }
   
-  .product-card {
-      width: 150px;
-      height: 200px;
-  }
+    .product-card {
+        width: 150px;
+        height: 200px;
+    }
   
-  .product-main-title {
-      font-size: 2rem;
-  }
+    .product-main-title {
+        font-size: 2rem;
+    }
   
-  .product-description {
-      font-size: 1rem;
-  }
+    .product-description {
+        font-size: 1rem;
+    }
 }
   
 @media (max-width: 991.98px) {
-  .product-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-  }
+    .product-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
 }
-
-
-  

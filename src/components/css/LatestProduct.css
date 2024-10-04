@@ -78,7 +78,7 @@
 
   .mens-latest-card {
     flex-direction: column;
-    height: auto;
+    height: 250px;
     width: 100%;
     border: none;
     border-radius: 0;
@@ -96,7 +96,6 @@
   .mens-latest-card .card-title {
     flex-grow: 1;
     display: -webkit-box;
-    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
     font-size: 0.9rem;
@@ -104,7 +103,7 @@
   }
 
   .mens-latest-card .card-img-top {
-    height: auto;
+    height: 150px;
     width: 100%;
     object-fit: cover;
   }
@@ -121,11 +120,12 @@
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   .mens-latest .container-fluid {
-    max-width: 720px;
+    max-width: 800px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 0;
   }
 
   .mens-latest .carousel-item .row {
@@ -141,7 +141,15 @@
   }
 
   .mens-latest-card {
-    margin-bottom: 20px;
+    height: 280px; /* Set a fixed height for uniformity on tablet */
+    margin-bottom: 0;
+  }
+
+  .mens-latest-card .card-img-top {
+
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
   }
 
   .mens-latest .carousel-control-prev,

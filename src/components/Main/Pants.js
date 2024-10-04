@@ -1,13 +1,13 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
-import pantsData from "../../assets/PantsData"
 import "../css/LatestProduct.css";
+import pantsData from "../../assets/PantsData";
 import Footer from "../partial/Footer";
 
-const MensLatest = () => {
+const pantsProduct = () => {
   return (
     <div id="mens-latest" className="mens-latest mt-5">
-      <Container fluid className="px-3 px-md-5">
+      <Container fluid className="px-3 px-md-5 mb-5">
         <h1 className="text-center mb-5">MR. SWABE PANTS PRODUCT</h1>
         <Row className="gx-3 gx-md-4">
           {pantsData.map((product) => (
@@ -25,7 +25,8 @@ const MensLatest = () => {
       </Container>
       <Footer />
     </div>
+
   );
 };
 
-export default MensLatest;
+export default pantsProduct;
