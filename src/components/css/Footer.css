@@ -1,6 +1,6 @@
 .shop-details-wrapper {
-  background-color: #333;
-  color: white;
+  background-color: #222425;
+  color: #dbdedf;
 }
 
 .shop-details {
@@ -32,7 +32,7 @@
 .footer-divider {
   margin-top: 2rem;
   margin-bottom: 1rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(#dbdedf);
 }
 
 .copyright-section {

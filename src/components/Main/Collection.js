@@ -1,16 +1,16 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import "../css/LatestProduct.css";
-import shoesData from "../../assets/ShoesData";
+import collectionData from "../../assets/CollectionData";
 import Footer from "../partial/Footer"
 
-const shoesProduct = () => {
+const collectionProduct = () => {
   return (
     <div id="mens-latest" className="mens-latest mt-5">
       <Container fluid className="px-3 px-md-5 mb-5">
-        <h1 className="text-center mb-5">MR. SWABE SHOES PRODUCT</h1>
+        <h1 className="text-center mb-5">MR. SWABE ANIME COLLECTION</h1>
         <Row className="gx-3 gx-md-4">
-          {shoesData.map((product) => (
+          {collectionData.map((product) => (
             <Col key={product.id} xs={6} md={3}>
               <Card className="mens-latest-card mb-3">
                 <Card.Img variant="top" src={product.image} />
@@ -29,4 +29,4 @@ const shoesProduct = () => {
   );
 };
 
-export default shoesProduct;
+export default collectionProduct;

@@ -5,7 +5,7 @@ import "./css/Carousel.css";
 
 function UncontrolledExample() {
   return (
-    <Carousel className="banner-carousel">
+    <Carousel id="Swabe" className="banner-carousel">
       <Carousel.Item>
         <ExampleCarouselImage text="slide" />
         <Carousel.Caption>

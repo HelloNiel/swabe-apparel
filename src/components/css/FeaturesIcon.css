@@ -3,7 +3,8 @@
   height: 200px;
   align-items: center;
   display: flex;
-  background-color: bisque;
+  color: #dbdedf;
+  background-color: #222425;
 }
 
 .list-icon {
@@ -35,7 +36,8 @@
     align-items: center;
     display: flex;
     padding-top: 10px;
-    background-color: bisque;
+    color: #dbdedf;
+    background-color: #222425;
   }
 
   .list-icon {
@@ -66,7 +68,8 @@
     height: 280px;
     align-items: center;
     display: flex;
-    background-color: bisque;
+    color: #dbdedf;
+    background-color: #222425;
   }
 }
 
@@ -77,7 +80,7 @@
     height: 280px;
     align-items: center;
     display: flex;
-    background-color: bisque;
+    background-color: #222425;
   }
   .list-icon {
     display: flex;

@@ -27,8 +27,8 @@ const UncontrolledExample = () => {
                   <Ri24HoursFill />
                 </div>
                 <div className="Content">
-                  <h3>24 Hours Open</h3>
-                  <p>Shop anytime you want</p>
+                  <h3>8:00 AM - 9:00 PM</h3>
+                  <p>Shop Now And Get Yours</p>
                 </div>
               </div>
             </div>

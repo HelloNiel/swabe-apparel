@@ -16,11 +16,10 @@ const MensLatest = () => {
   return (
     <div id="mens-latest" className="mens-latest mt-5">
       <Container fluid className="px-3 px-md-5">
-        <h1 className="text-center mb-5">MR. SWABE LATEST PRODUCT</h1>
-        <h2>Men's Latest Shirt</h2>
+        <h1 className="text-center mb-5">LATEST PRODUCT</h1>
+        <h2>For Men's Latest Shirts</h2>
         <p>
-          Details to details is what makes Hexashop different from the other
-          themes.
+          Get yours Now!
         </p>
         <Carousel indicators={false} interval={null} wrap={true}>
           {[...Array(Math.ceil(productsData.length / 4))].map((_, index) => (

@@ -1,24 +1,24 @@
-const products = [
+const ShoesProduct = [
     {
       id: 1,
       title: "Shoes",
       price: 129.99,
-      imgSrc: require("./images/Products/Shoes.jfif"),
+      imgSrc: require("../assets/images/Products/Shoes.jfif"),
       category: "shoes",
     },
     {
       id: 2,
       title: "Shirts",
-      imgSrc: require("./images/Products/Shirt.jfif"),
+      imgSrc: require("../assets/images/Products/Shoes.jfif"),
       category: "shirts",
     },
     {
       id: 3,
       title: "Pants",
-      imgSrc: require("./images/Products/Pants.jfif"),
+      imgSrc: require("../assets/images/Products/Shoes.jfif"),
       category: "pants",
     },
 ]
   
-export default products;
+export default ShoesProduct;
   
