@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Carousel, Container, Row, Col, Card, Modal, Button } from "react-bootstrap";
+import { FaTimes } from 'react-icons/fa';
 import productsData from "../assets/MensLatestProduct";
-import "./css/LatestProduct.css";
 
 const MensLatest = () => {
   const [showModal, setShowModal] = useState(false);
@@ -41,7 +41,7 @@ const MensLatest = () => {
                       <Card.Img variant="top" src={product.image} />
                       <Card.Body className="mens-latest-card-body">
                         <Card.Title>{product.name}</Card.Title>
-                        <button className="btn btn-primary" onClick={() => handleShow(product)}>Details</button>
+                        <button className="btn btn-primary" onClick={() => handleShow(product)}>View</button>
                       </Card.Body>
                     </Card>
                   </Col>
@@ -52,29 +52,55 @@ const MensLatest = () => {
         </Carousel>
       </Container>
 
-      <Modal show={showModal} onHide={handleClose} size="lg">
-        <Modal.Header closeButton>
-          <Modal.Title>{selectedProduct?.name}</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
+      <Modal show={showModal} onHide={handleClose} size="lg" centered dialogClassName="custom-modal">
+        <Modal.Body className="p-0">
+          <Button variant="link" className="close-button" onClick={handleClose}>
+            <FaTimes size={20} />
+          </Button>
           {selectedProduct && (
-            <Row>
+            <Row className="g-0">
               <Col md={6}>
-                <img src={selectedProduct.image} alt={selectedProduct.name} className="img-fluid" />
+                <img src={selectedProduct.image} alt={selectedProduct.name} className="img-fluid w-100 h-100 object-fit-cover" />
               </Col>
-              <Col md={6}>
-                <h5>Price: ${selectedProduct.price}</h5>
-                <p>{selectedProduct.description}</p>
-                <p><strong>Available Colors:</strong> {selectedProduct.colors.join(", ")}</p>
-                <Button variant="primary">Add to Cart</Button>
+              <Col md={6} className="d-flex flex-column p-4">
+                <div>
+                  <h3>{selectedProduct.name}</h3>
+                  <h5>Price: ${selectedProduct.price}</h5>
+                  <p>{selectedProduct.description}</p>
+                  <p><strong>Available Colors:</strong> {selectedProduct.colors.join(", ")}</p>
+                </div>
+                <div className="mt-auto">
+                  <Button variant="dark" className="w-100 add-to-cart-button">Add to Cart</Button>
+                </div>
               </Col>
             </Row>
           )}
         </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>Close</Button>
-        </Modal.Footer>
       </Modal>
+      <style jsx>{`
+        .custom-modal .modal-content {
+          border-radius: 0;
+        }
+        .close-button {
+          position: absolute;
+          top: 20px;
+          right: 20px;
+          color: black !important;
+          opacity: 1 !important;
+          z-index: 1;
+        }
+        .close-button:hover, .close-button:focus {
+          color: black !important;
+          opacity: 0.75 !important;
+          box-shadow: none !important;
+        }
+        .add-to-cart-button {
+          border-radius: 0;
+          text-transform: uppercase;
+          font-weight: bold;
+          padding: 8px 16px;
+        }
+      `}</style>
     </div>
   );
 };

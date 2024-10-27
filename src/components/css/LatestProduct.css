@@ -187,3 +187,20 @@
   color: black;
   border: 1px solid rgb(181, 174, 174);
 }
+
+.custom-modal .modal-content {
+  border-radius: 0;
+}
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: black !important;
+  opacity: 1 !important;
+  z-index: 1;
+}
+.close-button:hover, .close-button:focus {
+  color: black !important;
+  opacity: 0.75 !important;
+  box-shadow: none !important;
+}
