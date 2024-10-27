@@ -1,10 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import "../css/LatestProduct.css";
 import shirtData from "../../assets/ShirtsData";
-import Footer from "../partial/Footer"
+import Footer from "../partial/Footer";
+import CartModal from './CartModal';
+import { FaShoppingCart } from 'react-icons/fa';
 
-const shirtProduct = () => {
+const ShirtProduct = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [cartItems, setCartItems] = useState([]);
+  
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen);
+  };
+
+  const addToCart = (item) => {
+    setCartItems([...cartItems, item]);
+  };
+
+  const totalPrice = cartItems.reduce((total, item) => total + item.price, 0);
+
   return (
     <div id="mens-latest" className="mens-latest mt-5">
       <Container fluid className="px-3 px-md-5 mb-5">
@@ -16,7 +31,7 @@ const shirtProduct = () => {
                 <Card.Img variant="top" src={product.image} />
                 <Card.Body className="mens-latest-card-body">
                   <Card.Title>{product.name}</Card.Title>
-                  <button className="btn btn-primary">Details</button>
+                  <button className="btn btn-primary" onClick={() => addToCart(product)}>Add to Cart</button>
                 </Card.Body>
               </Card>
             </Col>
@@ -24,9 +39,17 @@ const shirtProduct = () => {
         </Row>
       </Container>
       <Footer />
+      <div style={{ position: 'fixed', bottom: '20px', right: '20px', color: 'black', cursor: 'pointer' }} onClick={toggleModal}>
+        <FaShoppingCart size={30} />
+      </div>
+      <CartModal 
+        isOpen={isModalOpen} 
+        toggleModal={toggleModal} 
+        cartItems={cartItems} 
+        totalPrice={totalPrice} 
+      />
     </div>
-
   );
 };
 
-export default shirtProduct;
+export default ShirtProduct;

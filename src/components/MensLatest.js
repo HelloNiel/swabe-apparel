@@ -1,9 +1,12 @@
-import React from "react";
-import { Carousel, Container, Row, Col, Card } from "react-bootstrap";
+import React, { useState } from "react";
+import { Carousel, Container, Row, Col, Card, Modal, Button } from "react-bootstrap";
 import productsData from "../assets/MensLatestProduct";
 import "./css/LatestProduct.css";
 
 const MensLatest = () => {
+  const [showModal, setShowModal] = useState(false);
+  const [selectedProduct, setSelectedProduct] = useState(null);
+
   const getSlideItems = (startIndex, itemsPerSlide) => {
     const items = [];
     for (let i = 0; i < itemsPerSlide; i++) {
@@ -12,6 +15,13 @@ const MensLatest = () => {
     }
     return items;
   };
+
+  const handleShow = (product) => {
+    setSelectedProduct(product);
+    setShowModal(true);
+  };
+
+  const handleClose = () => setShowModal(false);
 
   return (
     <div id="mens-latest" className="mens-latest mt-5">
@@ -31,7 +41,7 @@ const MensLatest = () => {
                       <Card.Img variant="top" src={product.image} />
                       <Card.Body className="mens-latest-card-body">
                         <Card.Title>{product.name}</Card.Title>
-                        <button className="btn btn-primary">Details</button>
+                        <button className="btn btn-primary" onClick={() => handleShow(product)}>Details</button>
                       </Card.Body>
                     </Card>
                   </Col>
@@ -41,6 +51,30 @@ const MensLatest = () => {
           ))}
         </Carousel>
       </Container>
+
+      <Modal show={showModal} onHide={handleClose} size="lg">
+        <Modal.Header closeButton>
+          <Modal.Title>{selectedProduct?.name}</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          {selectedProduct && (
+            <Row>
+              <Col md={6}>
+                <img src={selectedProduct.image} alt={selectedProduct.name} className="img-fluid" />
+              </Col>
+              <Col md={6}>
+                <h5>Price: ${selectedProduct.price}</h5>
+                <p>{selectedProduct.description}</p>
+                <p><strong>Available Colors:</strong> {selectedProduct.colors.join(", ")}</p>
+                <Button variant="primary">Add to Cart</Button>
+              </Col>
+            </Row>
+          )}
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>Close</Button>
+        </Modal.Footer>
+      </Modal>
     </div>
   );
 };
